@@ -5,146 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="Mike Zawitkowski">
-    <!-- <link rel="icon" href="../../favicon.ico"> -->
+    <title>Digital Home of Mike Zawitkowski</title>
+    <!-- TODO: add description  -->
+    <!--  TODO add GA -->
 
-    <title>Cover Template for Bootstrap</title>
-
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap -->
     <link href="/static/lib/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/static/css/bootstrap.icon-large.min.css" rel="stylesheet">
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="/static/css/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="/static/css/cover.css" rel="stylesheet">
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
     <link href="/static/css/styles.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="/static/lib/ie-emulation-modes-warning.js"></script>
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-
   <body>
-
     <div class="site-wrapper">
-
       <div class="site-wrapper-inner">
 
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Website of Mike Zawitkowski</h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="/">About</a></li>
-                  <!-- <li><a href="/work/">Work</a></li> -->
-                  <li><a href="/contact/">Contact</a></li>
-                </ul>
-              </nav>
+        <!-- Static navbar -->
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">
+                Digital Home of Mike Zawitkowski
+              </a>
             </div>
+            <div id="navbar" class="navbar-collapse collapse navbar-right">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/contact/">Contact</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
           </div>
+        </nav>
 
-          <div class="inner cover">
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+        <!-- MAIN BODY CONTENT -->
+        <div class="container">
+          <!-- <h1 class="text-center">Hello, World!</h1> -->
+          <br />
 
-              <div class="svg-container text-xs-center">
-                  <img src="/static/img/mzlogopath.svg" class="img-fluid center-block" alt="MZ logo" width="23%" height="23%">
-                  <br /><br /><br />
-                  <!-- <object type="image/svg+xml" data="/static/img/mzlogopath.svg" width="10%" height="10%" class="svg-content"> -->
-                  <!-- </object> -->
-              </div>
-            <!-- <h1 class="cover-heading">Mike Zawitkowski</h1> -->
-            <br /><br /><br />
-            <p class="lead">This site is where I occasionally post things that <br />
-              I find interesting or want to experiment with.
-              <br /><br /><br />
-              The exhibits are currently closed for renovations, <br />
-              but please come back again soon.<br />
-              <br /><br />
-              <!-- You may also find these nearby attractions of interest: -->
-              <!-- TODO: add the github, linkedin, twitter icons right here -->
-              <!-- <div class="icon-white"> -->
-              <br />
-                <!-- <a href="#" class="btn btn-lg btn-default">Learn more</a> -->
+            <img src="/static/img/mzlogopath.svg" class="img-fluid center-block" alt="MZ logo" width="20%" height="20%">
+
+          <br /><br />
+          <div class="row text-center">
+
+            <p>This site is where I occasionally post things that I find interesting or want to experiment with.</p>
                 <br />
+            <p>The exhibits are currently closed for renovations,
+              but please come back again soon.<br /></p>
+              <br /><br />
+              <p>You may also find these nearby attractions of interest:</p>
 
-                <!-- <a href="#" class="icon-github">github</a> -->
-                <!-- <a class="btn btn-block btn-social btn-twitter"> -->
-              <!-- </div> -->
+              <div class="btn-group row-center fa-3x">
+
+                  <a href="https://twitter.com/projski"><i class="fa fa-twitter"></i></a>
+                  &nbsp;&nbsp;&nbsp;
+                  <a href="linkedin.com/in/mikezawitkowski"><i class="fa fa-linkedin"></i></a>
+                  &nbsp;&nbsp;&nbsp;
+                  <a href="https://github.com/mikezawitkowski"><i class="fa fa-github"></i></a>
+              </div>
+
+              <br /><br />
               <br /><br />
 
+              <p>
               Don't forget to stop by the gift shop on your way out.
-
-            <p class="lead">
-              <!-- <a href="#" class="btn btn-lg btn-default">Learn more</a> -->
             </p>
+            <br /><br />
+            <br /><br />
+
           </div>
 
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-              <!--  TODO -->
-
-            </div>
           </div>
+
+
 
         </div>
-
       </div>
-
+      <div class="footer text-right">
+        <p>© 2009-2016 Mike Zawitkowski</p>
+      </div>
     </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
+
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="/static/lib/jquery-1.12.3.min.js"><\/script>')</script>
     <script src="/static/lib/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="/static/lib/ie10-viewport-bug-workaround.js"></script>
-
-    <!-- Attempt to auto hide navbar -->
-    <script>$("div.masthead-nav").autoHidingNavbar();</script>
-
-    <script type="text/javascript" language="javascript">
-<!--
-// Email obfuscator script 2.1 by Tim Williams, University of Arizona
-// Random encryption key feature by Andrew Moulden, Site Engineering Ltd
-// This code is freeware provided these four comment lines remain intact
-// A wizard to generate this code is at http://www.jottings.com/obfuscator/
-{ coded = "aJCSmaS@5esZWmneSsJn3se.aJ5"
-  key = "qVjfmLpSDe3lcuMCOUk4WdBwJI0GrFv57TRyZXAagKt6isPh18nYNHEzxQ2o9b"
-  shift=coded.length
-  link=""
-  for (i=0; i<coded.length; i++) {
-    if (key.indexOf(coded.charAt(i))==-1) {
-      ltr = coded.charAt(i)
-      link += (ltr)
-    }
-    else {
-      ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
-      link += (key.charAt(ltr))
-    }
-  }
-document.write("<a href='mailto:"+link+"'>"+link+"</a>")
-}
-//-->
-</script>
-<noscript>Sorry, you need Javascript on to email me.</noscript>
 
   </body>
 </html>
