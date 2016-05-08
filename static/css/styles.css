@@ -4,8 +4,10 @@
  */
 
 html, body {
-  width:100%;
-  height:100%;
+  background-color: #222;
+  width: 100%;
+  min-height: 100%;
+
 }
 
 a {
@@ -22,7 +24,7 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   font-family: "Helvetica Neueu", Helvateica,Arial, sans-serif;
-  background-color: #222;
+  /*background-color: #222;*/
   box-shadow: inset 0 0 490px black;
 }
 
