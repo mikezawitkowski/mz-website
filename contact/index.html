@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>Contact</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/lib/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="/static/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/cover.css" rel="stylesheet">
+    <link href="/static/css/styles.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="/static/lib/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--  Not a robot captcha-->
+    <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Website of Mike Zawitkowski</h3>
+              <!-- <h3> -->
+                <!-- <div class="svg-container text-xs-center">
+                    <img src="/static/img/mzlogopath.svg" class="img-fluid center-block" alt="MZ logo" width="5%" height="5%">
+                    <br /><br /><br />
+                </div> -->
+
+              <!-- </h3> -->
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li><a href="/">About</a></li>
+                  <li class="active"><a href="/contact/">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+              <!-- <div class="svg-container text-xs-center"> -->
+                  <!-- <img src="/static/img/mzlogopath.svg" class="img-fluid center-block" alt="MZ logo" width="25%" height="25%"> -->
+                  <!-- <object type="image/svg+xml" data="/static/img/mzlogopath.svg" width="10%" height="10%" class="svg-content"> -->
+                  <!-- </object> -->
+              <!-- </div> -->
+            <!-- <h1 class="cover-heading">Contact Me</h1> -->
+            <br /><br /><br />
+            <p class="lead">Some ways you can contact me:
+            </p>
+            <strong>Email (Javascript Required)</strong>
+            <pre>
+              &nbsp;
+<script type="text/javascript" language="javascript">
+<!--
+// Email obfuscator script 2.1 by Tim Williams, University of Arizona
+// Random encryption key feature by Andrew Moulden, Site Engineering Ltd
+// This code is freeware provided these four comment lines remain intact
+// A wizard to generate this code is at http://www.jottings.com/obfuscator/
+{ coded = "aJCSmaS@5esZWmneSsJn3se.aJ5"
+  key = "qVjfmLpSDe3lcuMCOUk4WdBwJI0GrFv57TRyZXAagKt6isPh18nYNHEzxQ2o9b"
+  shift=coded.length
+  link=""
+  for (i=0; i<coded.length; i++) {
+    if (key.indexOf(coded.charAt(i))==-1) {
+      ltr = coded.charAt(i)
+      link += (ltr)
+    }
+    else {
+      ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+      link += (key.charAt(ltr))
+    }
+  }
+document.write("<a class='mailtolink' href='mailto:"+link+"'>"+link+"</a>")
+}
+//-->
+</script><noscript>Sorry, you need Javascript on to email me.</noscript>
+</pre>
+<!-- TODO: Fix the code below so that it aligns correctly, some are page breaking strangely -->
+
+            <br />
+            <strong>Python</strong>
+
+            <pre title="Python way to get my email address">
+              <code>
+#!/user/bin/env python&nbsp;
+"""&nbsp;
+contact.py&nbsp;
+"""
+from __future__ import print_function&nbsp;
+
+
+def contact():
+    s = "http://www.mikezawitkowski.com"
+    s = s[s.index('m'):]
+    print(s[:s.index('z'):] + "@" + s)
+
+
+if __name__ == "__main__":
+    contact()
+</code></pre>
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                <br />
+
+            <strong>Go (click <a href="https://play.golang.org/p/1tOio2kFfZ" target="_blank">here to run in the playground</a>)</strong>
+            <pre class="lang:go decode:true" title="Run this code in golang if you need to go and contact me">
+/* contact.go */&nbsp;<br/>
+package main&nbsp;
+&nbsp;
+import (
+        "fmt"
+        "strings"
+       )
+&nbsp;
+func main() {
+    s := "http://www.mikezawitkowski.com"
+    s = s[strings.Index(s, "m"):]
+    fmt.Println(s[:strings.Index(s, "e")+1] + "@" + s)
+}</pre>
+&nbsp;
+&nbsp;
+&nbsp;
+<br />
+
+<strong>C</strong>
+<pre class="lang:c decode:true ">/* contact.c */
+#include &lt;stdio.h&gt;
+
+int main(void) {
+    char s[] = "http://www.mikezawitkowski.com";
+    printf("%.*s@%.*s\n", 4, s + 11, 19, s + 11);
+}</pre>
+&nbsp;
+&nbsp;
+&nbsp;
+<br />
+
+<strong>SQL</strong>
+<pre class="lang:mysql decode:true">SET @s = "http://www.mikezawitkowski.com";
+SELECT CONCAT(MID(@s, 12, 4), "@", RIGHT(@s, 19)) AS "email";
+</pre>
+&nbsp;
+&nbsp;
+&nbsp;
+<br />
+
+            <!-- <form action="?" method="POST">
+              <div class="g-recaptcha" data-sitekey="6Lf5SB8TAAAAALNHPNu-0eqyQc84OvY2pckNi5ew"></div>
+              <br/>
+              <input type="submit" value="Submit">
+            </form> -->
+
+
+            <!-- <p class="lead">
+              <a href="#" class="btn btn-lg btn-default">Learn more</a>
+            </p> -->
+            <br /><br /><br /><br /><br />
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>,
+                by <a href="https://twitter.com/mdo">@mdo</a>.</p> icons by <a href="http://glyphicons.com">glyphicons.com</a>
+              <!--  TODO -->
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/static/lib/jquery-1.12.3.min.js"><\/script>')</script>
+    <script src="/static/lib/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/static/lib/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Attempt to auto hide navbar -->
+    <script>$("div.masthead-nav").autoHidingNavbar();</script>
+
+
+    <script type="text/javascript" language="javascript">
+<!--
+// Email obfuscator script 2.1 by Tim Williams, University of Arizona
+// Random encryption key feature by Andrew Moulden, Site Engineering Ltd
+// This code is freeware provided these four comment lines remain intact
+// A wizard to generate this code is at http://www.jottings.com/obfuscator/
+{ coded = "aJCSmaS@5esZWmneSsJn3se.aJ5"
+  key = "qVjfmLpSDe3lcuMCOUk4WdBwJI0GrFv57TRyZXAagKt6isPh18nYNHEzxQ2o9b"
+  shift=coded.length
+  link=""
+  for (i=0; i<coded.length; i++) {
+    if (key.indexOf(coded.charAt(i))==-1) {
+      ltr = coded.charAt(i)
+      link += (ltr)
+    }
+    else {
+      ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+      link += (key.charAt(ltr))
+    }
+  }
+document.write("<a href='mailto:"+link+"'>"+link+"</a>")
+}
+//-->
+</script><noscript>Sorry, you need Javascript on to email me.</noscript>
+
+  </body>
+</html>

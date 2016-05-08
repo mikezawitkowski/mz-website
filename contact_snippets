@@ -1,0 +1,61 @@
+To contact me, please run one of the code snippets below to derive my email address. (Or, you can use the webform at the very end.)
+
+<strong>Python</strong>
+<pre class="lang:python decode:true" title="Python way to get my email address">#!/user/bin/env python
+"""
+contact.py
+"""
+from __future__ import print_function
+
+
+def contact():
+    s = "http://www.mikezawitkowski.com"
+    s = s[s.index('m'):]
+    print(s[:s.index('z'):] + "@" + s)
+
+
+if __name__ == "__main__":
+    contact()</pre>
+&nbsp;
+
+<strong>Go (also available in the <a href="https://play.golang.org/p/1tOio2kFfZ" target="_blank">playground</a>)</strong>
+<pre class="lang:go decode:true" title="Run this code in golang if you need to go and contact me">/*
+contact.go
+*/
+package main
+
+import (
+        "fmt"
+        "strings"
+       )
+
+func main() {
+    s := "http://www.mikezawitkowski.com"
+    s = s[strings.Index(s, "m"):]
+    fmt.Println(s[:strings.Index(s, "e")+1] + "@" + s)
+}</pre>
+&nbsp;
+
+<strong>C</strong>
+<pre class="lang:c decode:true ">/* contact.c */
+#include &lt;stdio.h&gt;
+
+int main(void) {
+    char s[] = "http://www.mikezawitkowski.com";
+    printf("%.*s@%.*s\n", 4, s + 11, 19, s + 11);
+}</pre>
+&nbsp;
+
+<strong>SQL</strong>
+<pre class="lang:mysql decode:true">SET @s = "http://www.mikezawitkowski.com";
+SELECT CONCAT(MID(@s, 12, 4), "@", RIGHT(@s, 19)) AS "email";
+</pre>
+&nbsp;
+
+<strong>...or you can use a contact form like most human beings:</strong>
+
+[contact-form-7 id="25" title="Contact form 1"]
+
+&nbsp;
+
+<em>Thanks to <a href="http://www.coglib.com/~icordasc/" target="_blank">Ian Cordasco</a> for giving me permission to steal his idea for this contact page, and also for forbidding me from stealing the actual code he worked so hard on.</em>
